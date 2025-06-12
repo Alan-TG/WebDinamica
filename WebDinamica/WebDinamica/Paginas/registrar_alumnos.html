@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Nuevo Alumno</title>
+    <link rel="stylesheet" href="../css_admin/registrar_alumno.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Nuevo Alumno</h2>
+        <form action="../Base/registrar_alumno.php" method="post"> <!-- Cambia la acción aquí -->
+            <label for="numero_control">Número de Control:</label>
+            <input type="text" id="numero_control" name="numero_control" required>
+
+            <label for="curp">CURP:</label>
+            <input type="text" id="curp" name="curp" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="semestre">Semestre:</label>
+            <input type="number" id="semestre" name="semestre" required min="1">
+
+            <label for="carrera">Carrera:</label>
+            <input type="text" id="carrera" name="carrera" required>
+
+            <label for="situacion_actual">Situación Actual:</label>
+            <input type="text" id="situacion_actual" name="situacion_actual" required>
+
+            <label for="correo_electronico">Correo Electrónico Institucional:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" required>
+
+            <label for="domicilio_institucion">Domicilio Institucional:</label>
+            <textarea id="domicilio_institucion" name="domicilio_institucion" required></textarea <label for="historial_academico">Historial Académico:</label>
+            <textarea id="historial_academico" name="historial_academico"></textarea>
+
+            <label for="inasistencias">Inasistencias:</label>
+            <input type="number" id="inasistencias" name="inasistencias" value="0" min="0">
+
+            <label for="horario">Horario:</label>
+            <textarea id="horario" name="horario"></textarea>
+
+            <input type="submit" value="Registrar Alumno">
+        </form>
+
+        <div class="back-button">
+            <button><a href="index_administrativo.php" style="color:white; text-decoration:none;">Volver</a></button>
+        </div>
+    </div>
+</body>
+</html>
